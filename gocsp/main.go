@@ -26,7 +26,7 @@ func main() {
 
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	f := fuzz.New()
-	// make message
+	// generate message
 	go func() {
 		for {
 			time.Sleep(time.Duration(r.Intn(8)) * time.Second)
